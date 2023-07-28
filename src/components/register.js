@@ -1,25 +1,21 @@
 import React,{useState} from 'react'
-import {Link, useNavigate} from 'react-router-dom';
+import { useNavigate} from 'react-router-dom';
 import axios from "axios";
 import * as Yup from "yup";
 import { Formik, Form, Field, ErrorMessage } from "formik";
-import { FormGroup, FormControl, Button } from "react-bootstrap";
+import { FormGroup,  Button } from "react-bootstrap";
 
 const Register=()=> {
-	const UPPERCASE_PATTERN = /[A-Z]/;
+const UPPERCASE_PATTERN = /[A-Z]/;
 
 const LOWERCASE_PATTERN = /[a-z]/;
 
 const NUMBER_PATTERN = /[0-9]/;
 
 const SPECIAL_CHAR_PATTERN = /[`!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?~]/;
-	const navigate = useNavigate();
-
-
-    
-    const [formValues, setFormValues] =
-	useState({ email: '', password: '' })
-    const onSubmit = studentObject => {
+const navigate = useNavigate();
+const [formValues, setFormValues] =  useState({ email: '', password: '' })
+const onSubmit = studentObject => {
         axios.post(
     'http://localhost:4000/students/create-student',
         studentObject)

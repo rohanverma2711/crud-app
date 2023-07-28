@@ -269,24 +269,7 @@ module.exports = {
       /** ------------------------------------------------------------
        *
        * Box Shadow
-       *
-       * ------------------------------------------------------------
-       */
-      boxShadow: {
-        product: "0 0px 12px 2px rgba(48, 57, 90, 0.19)",
-        team: "0px 2px 10px rgba(36, 68, 117, 0.08)",
-        editButton: "1px 2px 8px rgba(40, 26, 26, 0.25)",
-        base: "0px 2px 10px rgba(36, 68, 117, 0.08)",
-        leftPanel: "0px 2px 6px rgba(0, 0, 0, 0.247323)",
-        campaign: "1px 2px 2px rgba(0, 0, 0, 0.224131)",
-        select: "0px 2px 6px rgba(0, 0, 0, 0.146061)",
-        panalHeader: "0px 2px 6px rgba(0, 0, 0, 0.146061)",
-        category: "2px 2px 4px 1px rgba(39, 34, 98, 0.220908)",
-        navbar_darkShadow: "0px 4px 9px rgba(63, 67, 79, 0.11)",
-        c1: "0 2px 4px rgba(0, 0, 0, 0.5)",
-        subscription: "0px 2px 18px rgba(130, 130, 130, 0.25)",
-        profileCard: "0px 4px 4px rgba(0, 0, 0, 0.25);"
-      },
+    
       /** ------------------------------------------------------------
        *
        * Z Index
@@ -303,107 +286,7 @@ module.exports = {
        *
        * ------------------------------------------------------------
        */
-      backgroundImage: {
-        EndorsementMbBg: "url('../public/images/FanBg/MobileLanding.png')",
-        endorsementBg:
-          "url('../public/images/EndorsementPopupModal/endorsementBg.png')",
-        endorsementLightBg:
-          "url('../public/images/EndorsementPopupModal/endorsementLightBg.png')",
-        glitters: "url('../public/images/EndorsementPopupModal/glitters.png')",
-        heroImage: "url('../public/images/LandingPage/heroImage.png')",
-        EndorsementImg: "url('../public/images/FanBg/Endorse.png')",
-        LandingPageMobileBackGround:
-          "url('../public/images/LandingPage/LandingPageMobileBackGround.png')",
-        LandingPageBackgroundImage:
-          "url('../public/images/LandingPage/LandingPageBackground.png')",
-        fanEndorsement:
-          "url('../public/images/Landing/endorsement/fanEndorsement.png')",
-        offerTag: "url('../public/images/productList/offerTag.svg')",
-        legacyMobile:
-          "url('../public/images/LandingPage/Legacy/legacy-mobile.png')",
-        legacy: "url('../public/images/LandingPage/Legacy/legacy.png')",
-        family: "url('../public/images/LandingPage/Support/family.png')",
-        friends: "url('../public/images/LandingPage/Support/friends.png')",
-        fans: "url('../public/images/LandingPage/Support/fans.png')",
-        accountSetupImage:
-          "url('../public/images/AccountSetup/accountSetupImage.png')",
-        joiningClub:
-          "url('../public/images/IdentityConfirmation/joiningClub.png')",
-        playgroundImage: "url('../public/images/JoinAE/playground.png')",
-        landingEndorseWhiteBackground:
-          "url('../public/images/Landing/endorsement/landingEndorseWhiteBackground.png')",
-        EndorsementBackgrounddark:
-          "url('../public/images/Endorsement/EndorsementBackgrounddark.png')",
-        EndorsementBackgroundlight:
-          "url('../public/images/Endorsement/EndorsementBackgroundLight.png')",
-        watchBGDark: "url('../public/images/Watch/WatchBGDark.png')",
-        backgroundJoinAE: "url('../public/images/JoinAE/joinAeBackground.svg')",
-        backgroundJoinAEDark:
-          "url('../public/images/JoinAE/joinAeBackgroundDark.svg')",
-        manageSubscription:
-          "linear-gradient(to  bottom, rgba(255, 0, 0, 0.3), rgba(0, 0, 0, 1)),url('../public/images/ManageSubscription/manageSubscription.png')",
-        star: "url('../public/images/ManageSubscription/star.svg')",
-        gradientChat:
-          "url('../public/images/TopAthletes/PublicConference/BgGradient.svg')",
-        liveNotification:
-          "url('../public/images/TopAthletes/Top100Athletes/BgNotification.svg')",
-        gradientChat2:
-          "url('../public/images/TopAthletes/PublicConference/BgGradient2.svg')",
-        hideIcon:
-          "url('../public/images/TopAthletes/PublicConference/HideIcon.svg')",
-        gradientBottom:
-          "url('../public/images/TopAthletes/PublicConference/BgBottomGradient.svg')",
-        landingPageWatchBackgroundMobile:
-          "url('../public/images/LandingPage/WatchBackgroundMobile.png')",
-        landingPageWatchBackgroundDesktop:
-          "url('../public/images/LandingPage/WatchBackgroundDesktop.png')",
-        watchBackgroundDark: "url('../public/images/Watch/WatchBGDark.png')",
-        watchBackgroundDarkMobile:
-          "url('../public/images/Watch/WatchBGDarkMobile.png')",
-        hideIconLight:
-          "url('../public/images/TopAthletes/PublicConference/HideIconLight.svg')",
-        gradientBottom:
-          "url('../public/images/TopAthletes/PublicConference/BgBottomGradient.svg')",
-        gradientVideoBar:
-          "url('../public/images/TopAthletes/PublicConference/VideoBarBg.svg')",
-        backgroundClubPin:
-          "url('../public/images/TopAthletes/PublicConference/clubBgPin.svg')",
-        manageSubscription:
-          "url('../public/images/ManageSubscription/manageSubscription.png')",
-        backgroundJoinAEDark:
-          "url('../public/images/JoinAE/joinAeBackgroundDark.svg')",
 
-        star: "url('../public/images/ManageSubscription/star.svg')",
-        profile: "url('../public/images/Profile/fanDesktopbg.svg')",
-        profileLight:
-          "url('../public/images/Profile/fanProfileHeaderLight.svg')",
-        profileMobile: "url('../public/images/Profile/fanMobilebg.svg')",
-        BioBackground: "url('../public/images/Profile/BioBackground.png')",
-        myFeedBackground:
-          "url('../public/images/Profile/myFeedBackground.svg')",
-
-        landingPageWatchBackgroundMobile:
-          "url('../public/images/LandingPage/WatchBackgroundMobile.png')",
-        landingPageWatchBackgroundDesktop:
-          "url('../public/images/LandingPage/WatchBackgroundDesktop.png')",
-        watchBackgroundDark: "url('../public/images/Watch/WatchBGDark.png')",
-        watchBackground: "url('../public/images/Watch/watchBg.svg')",
-        watchBackgroundDarkMobile:
-          "url('../public/images/Watch/WatchBGDarkMobile.png')",
-        backgroundJoinAEDark:
-          "url('../public/images/JoinAE/joinAeBackgroundDark.svg')",
-
-        star: "url('../public/images/ManageSubscription/star.svg')",
-        aeBackground: "url('../public/images/TopAthletes/aeBackground.png')",
-        bioHeaderGradient:
-          "linear-gradient(90deg, rgba(0, 0, 0, 0.82) 0%, rgba(62, 62, 62, 0) 53.78%);",
-
-        backgroundFan:
-          "linear-gradient(to bottom, rgba(0, 0, 0, 0.72), rgba(0, 0, 0, 0,12)),url('../public/images/FanPage/backgroundFan.png')",
-        aeLogo: "url('../public/images/TopAthletes/aeLogo.png')",
-        profileFeedBackground:
-          "url('../public/images/Profile/profileFeedBackground.png')",
-      },
       inset: {
         38: "38px",
       },

@@ -24,7 +24,7 @@ studentSchema.find(req.body)
 });
 
 
-
+//api to find the user when clicked on it.
 router.get("/update-student/:id", async (req, res) => {
 	try {
 	  const student = await studentSchema.findById(req.params.id);
@@ -41,6 +41,8 @@ router.get("/update-student/:id", async (req, res) => {
 	}
   });
 
+
+//api to update the details of the user
   router.put("/update-student/:id", async (req, res, next) => {
 	try {
 	  const updatedStudent = await studentSchema.findByIdAndUpdate(
@@ -63,6 +65,7 @@ router.get("/update-student/:id", async (req, res) => {
 	}
   });
 
+  //api to delete a user
 router.delete("/delete-student/:id", async (req, res, next) => {
 	try {
 	  const deletedStudent = await studentSchema.findByIdAndRemove(req.params.id);

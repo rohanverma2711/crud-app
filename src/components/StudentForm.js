@@ -1,12 +1,8 @@
 import React from "react";
 import * as Yup from "yup";
 import { Formik, Form, Field, ErrorMessage } from "formik";
-import { FormGroup, FormControl, Button } from "react-bootstrap";
-import { Nav, Navbar, Container,Row }
-		from "react-bootstrap";
-import { BrowserRouter as Router, Routes,
-			Route, Link } from "react-router-dom";
-			import "bootstrap/dist/css/bootstrap.css";
+import { FormGroup, Button } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.css";
 			
 const StudentForm = (props) => {
 
@@ -28,31 +24,12 @@ const StudentForm = (props) => {
 		.matches(LOWERCASE_PATTERN, "Password must contain a lowercase letter")
 		.matches(NUMBER_PATTERN, "Password must contain a number")
 		.matches(SPECIAL_CHAR_PATTERN, "Password must contain a special character")
-		
-    
-        
     });
 console.log(props);
 return (
 	<div className="form-wrapper">
-		
-
-
-		
-				
-			
-
-			
-				
-			
-			
-			
-		
-	<Formik {...props} validationSchema={validationSchema}>
-	  
-
-		
-		<Form className="">
+		<Formik {...props} validationSchema={validationSchema}>
+	  <Form className="">
 		<FormGroup className="mb-4">
 		<label>Email</label>
 			<Field name="email" type="text"
