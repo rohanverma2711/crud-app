@@ -36,5 +36,5 @@ This will start the frontend application.
 4) Node js
 5) Tailwind CSS
 
-My Projects are availabe at  [Link](https://github.com/rohanverma2711)
+My Projects are available at  [Link](https://github.com/rohanverma2711)
 
