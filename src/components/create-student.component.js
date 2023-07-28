@@ -4,9 +4,12 @@
 import React, { useState, useEffect } from "react";
 import axios from 'axios';
 import StudentForm from "./StudentForm";
+import { useNavigate } from "react-router-dom";
 
 // CreateStudent Component
 const CreateStudent = () => {
+
+	const navigate = useNavigate();
 const [formValues, setFormValues] =
 	useState({ email: '', password: '' })
 	console.log(formValues,"asdsada")
@@ -17,7 +20,8 @@ const onSubmit = studentObject => {
 	studentObject)
 	.then(res => {
 		if (res.status === 200)
-		alert('Student successfully created')
+		{alert('Student successfully created')
+		navigate("/student-list")}
 		else
 		Promise.reject()
 	})
@@ -32,7 +36,7 @@ return(
 <StudentForm initialValues={formValues}
 	onSubmit={onSubmit}
 	enableReinitialize>
-	Create Student
+	Create User
 	</StudentForm>
 	
 	</>

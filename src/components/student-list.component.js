@@ -31,7 +31,7 @@ return (
 	<div>
 
 				
-				React MERN Stack App
+				React CRUD App
 		
 	</div>
 	<div>

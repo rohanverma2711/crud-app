@@ -9,14 +9,29 @@ import { BrowserRouter as Router, Routes,
 			import "bootstrap/dist/css/bootstrap.css";
 			
 const StudentForm = (props) => {
-const validationSchema = Yup.object().shape({
-	email: Yup.string()
-	.email("You have enter an invalid email address")
-	.required("Required"),
-	password: Yup.string().required(),
 
+	const UPPERCASE_PATTERN = /[A-Z]/;
+
+	const LOWERCASE_PATTERN = /[a-z]/;
 	
-});
+	const NUMBER_PATTERN = /[0-9]/;
+	
+	const SPECIAL_CHAR_PATTERN = /[`!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?~]/;
+	const validationSchema = Yup.object().shape({
+        email: Yup.string()
+        .email("You have enter an invalid email address")
+        .required("Email is Required"),
+        password: Yup.string()
+		.required("Password is required")
+		.min(8, "Password must be atleast 8 characters long")
+		.matches(UPPERCASE_PATTERN, "Password must contain a uppercase letter")
+		.matches(LOWERCASE_PATTERN, "Password must contain a lowercase letter")
+		.matches(NUMBER_PATTERN, "Password must contain a number")
+		.matches(SPECIAL_CHAR_PATTERN, "Password must contain a special character")
+		
+    
+        
+    });
 console.log(props);
 return (
 	<div className="form-wrapper">
@@ -39,6 +54,7 @@ return (
 		
 		<Form className="">
 		<FormGroup className="mb-4">
+		<label>Email</label>
 			<Field name="email" type="text"
 				className="form-control " />
 			<ErrorMessage
@@ -48,7 +64,8 @@ return (
 			/>
 		</FormGroup>
 		<FormGroup  className="mb-4">
-			<Field name="password" type="number"
+			<label>Password</label>
+			<Field name="password" type="text"
 				className="form-control " />
 			<ErrorMessage
 			name="password"
